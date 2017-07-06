@@ -25,32 +25,8 @@ function printArray(array $array){
 }
 
 /* Test */
-
-$str = 'Heizölrückstoßabdämpfung';
-foreach (count_chars($str, 1) as $i => $val) {
-    $ary[]= [chr($i),$val, $i];
-}
-
-
-echo chr(126);
 printArray($ary);
 
 
 ?>
-<html>
-   <head>
-      <title>Codes Unicode HTML</title>
-   </head>
-   <body>
-      <h1>Codes Unicode HTML</h1>
-      <table border="1">
-         <tr><th>Caractère</th><th>Code Unicode HTML</th></tr>
-         <?php
-            for ($i=0; $i<10000; $i++) {
-               echo "<tr><td>&#$i;</td><td>&amp;#$i;</td></tr>";
-         }
-      ?>
-      </table>
-   </body>
-</html>
 
