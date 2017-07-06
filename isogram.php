@@ -24,9 +24,21 @@ function printArray(array $array){
 
 }
 
+$str = 'Heizölrückstoßabdämpfung';
+function testIso($str){
+    $str = strtolower($str);
+    $search = array(" ", "-");
+    $str = str_replace($search, "", $str);
+    foreach (count_chars($string, 1) as $i => $val) {
+        if ($val[$i] != $val[$i+1]){
+        return true;
+        }
+    }
+    return false;
+}
 /* Test */
-printArray($ary);
-
-
+// printArray($ary);
+ var_dump(testIso($str));
 ?>
+
 
