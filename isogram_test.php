@@ -42,19 +42,16 @@ class IsogramTest extends PHPUnit_Framework_TestCase
 
     public function testIgnoresSpaces()
     {
-        $this->markTestSkipped();
         $this->assertFalse(isIsogram('the quick brown fox'));
     }
 
     public function testIgnoresSpaces2()
     {
-        $this->markTestSkipped();
         $this->assertTrue(isIsogram('Emily Jung Schwartzkopf'));
     }
 
     public function testDuplicateAccentedLetters()
     {
-        $this->markTestSkipped();
         $this->assertFalse(isIsogram('éléphant'));
     }
 }
