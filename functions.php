@@ -1,4 +1,7 @@
 <?php 
+/* 
+                Fonctions
+*/
 function printPlage (int $debut, int $fin){
         $i = $debut + 1;
         $final = "<ul>";
@@ -20,6 +23,7 @@ function printPlage (int $debut, int $fin){
         $final .= "</ul>";
         return $final;
     }
+
 function intervalleArray(array $ary){
     for ($i=0; $i < count($ary)-1;$i++){
         $firstNumber = $ary[$i];
@@ -37,4 +41,15 @@ function intervalleArray(array $ary){
         }
     }
     return $ecart;
+}
+
+
+/* 
+                Display Fonctions
+*/
+
+function printArray($ary){
+    echo '<pre>';
+    print_r($ary);
+    echo '</pre>';
 }
