@@ -20,3 +20,21 @@ function printPlage (int $debut, int $fin){
         $final .= "</ul>";
         return $final;
     }
+function intervalleArray(array $ary){
+    for ($i=0; $i < count($ary)-1;$i++){
+        $firstNumber = $ary[$i];
+        $secondNumber = $ary[$i+1];
+        $testEcart = $firstNumber - $secondNumber;
+        if ($testEcart < 0){
+            $number = $secondNumber - $firstNumber;
+        } else{
+            $number = $firstNumber - $secondNumber;
+        }
+        if (isset($ecart) == NULL){
+            $ecart = $number;
+        } else if ($ecart < $number){
+            $ecart = $number;
+        }
+    }
+    return $ecart;
+}
